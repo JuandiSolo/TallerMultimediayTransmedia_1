@@ -1,1 +1,34 @@
-        
+/*
+body {
+    background-color: aquamarine;
+}
+
+.Juan{
+    color: blanchedalmond;
+    background-color: black;
+}
+
+#a285 {
+    color: green
+}
+    */
+
+#contenedor1 {
+    width: 45vw;
+    height: 80vh;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#contenedor2 {
+    width: 45vw;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.cuadrado{
+    width: 25%;
+    height: 25%;
+    background-color: aqua;
+    border: 1px solid black;
+}
