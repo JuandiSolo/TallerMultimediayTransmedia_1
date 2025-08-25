@@ -18,12 +18,19 @@ body {
     height: 80vh;
     border: 1px solid black;
     margin: 10px;
+    position: relative;
 }
 
 #contenedor2 {
     width: 45vw;
     height: 80vh;
     border: 1px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column-reverse;
+    align-content: space-around;
 }
 
 .cuadrado{
@@ -31,4 +38,36 @@ body {
     height: 25%;
     background-color: aqua;
     border: 1px solid black;
+    position: absolute
+}
+
+.cuadrado2{
+    width: 25%;
+    height: 25%;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#cuadrado1{
+    top: 0%;
+    left: 0%;
+}
+
+#cuadrado2{
+    top: 25%;
+    left: 25%;
+}
+
+#cuadrado3{
+    top: 50%;
+    left: 50%;
+}
+
+
+
+#contenedor2 {
+    width: 45vw;
+    height: 80vh;
+    border: 1px solid black;
+    position: relative;
 }
