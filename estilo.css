@@ -13,6 +13,33 @@ body {
 }
     */
 
+@keyframes redondear{
+    0%{
+        border-radius: 0%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+
+@keyframes redondear2{
+    0%{
+        border-radius: 0%;
+        background-color: aqua;
+    }
+    50%{
+        border-radius: 25%;
+        background-color: rgb(50,194,79);
+    }
+    100%{
+        border-radius: 50%;
+        ackground-color: rgb(255,238,0);
+    }
+}
+
 #contenedor1 {
     width: 45vw;
     height: 80vh;
@@ -53,6 +80,15 @@ body {
     left: 0%;
 }
 
+#cuadradoDibujo1{
+    top: 10%;
+    left: 50%;
+    animation-name: redondear;
+    animation-duration: 2s;
+    animation-iteration-count: 2s;
+    animation-direction: alternate;
+}
+
 #cuadrado2{
     top: 25%;
     left: 25%;
@@ -63,7 +99,14 @@ body {
     left: 50%;
 }
 
+#cuadradoDibujo2{
+    top: 10%;
+    left: 75%;
+}
 
+#cuadradoDibujo2:hover{
+    animation: redondear2 2s linear infinite alternate;
+}
 
 #contenedor2 {
     width: 45vw;
@@ -104,14 +147,6 @@ align-items: center;
 flex-direction: row;
 }
 
-.cuadrado {
-    width: 25%;
-    height: 25%;
-    background-color: rgb(3, 154, 255);
-    border: 1px solid black;
-    position: absolute;
-}
-
 .cuadrado2 {
     width: 25%;
     height: 25%;
@@ -139,6 +174,9 @@ left: 50%;
 /* Estilo dibujo*/
 #tituloDibujo {
 text-align: center;
+font-family: "Asimovian", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 #lienzo {
@@ -150,6 +188,17 @@ background-size: cover;
 border: 1px solid black;
 margin: 0 auto;
 position: relative;
+}
+
+#lienzo2{
+
+width: 950px;
+height: 600px;
+position: relative;
+}
+
+#lienzo:hover{
+  background-image: url("https://i.imgur.com/hLb0hXu.jpeg");  
 }
 
 .circulo {
@@ -174,6 +223,10 @@ position: relative;
     left: 260px; /* posición desde el borde izquierdo del lienzo */
 }
 
+.circulo2_main_body:hover{
+    background-color: rgb(52, 96, 255); /* color de fondo */
+}
+
 .circulo3_brazo_derecho {
     width: 250px; /* ancho */
     height: 170px; /* alto */
@@ -185,6 +238,12 @@ position: relative;
     left: 185px; /* posición desde el borde izquierdo del lienzo */
     transform: rotate(-10deg);
 }
+
+    
+.circulo3_brazo_derecho:hover{
+    background-color: rgb(52, 96, 255); /* color de fondo */
+}
+
 
 .circulo4_brazo_izquierdo {
     width: 240px; /* ancho */
@@ -198,6 +257,9 @@ position: relative;
     transform: rotate(30deg);
 }
 
+.circulo4_brazo_izquierdo:hover{
+    background-color: rgb(52, 96, 255); /* color de fondo */
+}
 
 .circulo5_pierna_derecha {
     width: 200px; /* ancho */
@@ -290,6 +352,18 @@ position: relative;
     top: 20px;
     left: 120px;
 }
+
+.cuadradoDibujo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 230, 0);
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    
+
+}
+
 .cuadrado1 {
     width: 100px;
     height: 100px;
@@ -328,3 +402,4 @@ position: relative;
     top: 10px;
     left: 390px;
 }
+
